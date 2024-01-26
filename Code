@@ -13,16 +13,6 @@ for i in range(250):
     trtl.circle(5-i, 100)
     trtl.rt(80)
     trtl.circle(5-i, 100)
-
-trtl.goto(0,0)
-for i in range(100):
-    hue = Userinputhue
-    color = colorsys.hsv_to_rgb(hue,0,1)
-    trtl.pencolor(color)
-    trtl.circle(5-i, 100)
-    trtl.lt(100)
-    trtl.circle(5-i, 100)
-    trtl.rt(100)
-    trtl.circle(5-i, 100)
+    
 wn = trtl.Screen()
 wn.mainloop()
