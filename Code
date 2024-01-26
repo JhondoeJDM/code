@@ -1,14 +1,13 @@
-
-
 import turtle as trtl
-import colorsys
 trtl.speed(0)
 trtl.bgcolor("black")
 Userinputhue = int(input("input hue"))
 for i in range(250):
-    hue =+ Userinputhue
-    color = colorsys.hsv_to_rgb(hue,0,1)
-    trtl.pencolor(color)
+    
+    colorR =+ 50
+    colorG =+ 50
+    colorB =+ 50
+    trtl.pencolor(colorR, colorB, colorG)
     trtl.circle(5-i, 100)
     trtl.lt(80)
     trtl.circle(5-i, 100)
