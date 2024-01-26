@@ -16,3 +16,4 @@ for i in range(250):
     trtl.circle(5-i, 100)
 
 wn = trtl.Screen()
+wn.mainloop()
