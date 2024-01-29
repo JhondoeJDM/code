@@ -2,51 +2,32 @@ import turtle as trtl
 import colorsys
 trtl.speed(0)
 trtl.bgcolor("black")
-#changing color value
 trtl.colormode(255)
-#changing color value
-R=20
-#changing color value
-G=20
-#changing color value
-B=20
-#changing color value
+startR = int(input("Starting value R"))
+startG = int(input("Starting value G"))
+startB = int(input("Starting value B"))
+R=startR
+G=startG
+B=startB
 trtl.color(R, G, B)
-#changes the color of the flower
 
 for i in range(250):
-#setting color of flower
+    
     trtl.color(R, G, B)
-#setting base pen color
     trtl.pencolor()
-#drawing petal
     trtl.circle(5-i, 100)
-#drawing size of petal
     trtl.lt(80)
-#setting size of petal
     trtl.circle(5-i, 100)
-#drawing size of petal
     trtl.rt(80)
-#setting size of petal
     trtl.circle(5-i, 100)
-#drawing size of petal
     R = R + 5
-#changing color value
     G = G + 5
-#changing color value
     B = B + 5
-#changing color value
     if R >= 250:
-#changing color value
-        R = 0
-#changing color value
+        R = startR
     if G >= 250:
-#changing color value
-        G = 0
-#changing color value
+        G = startG
     if B >= 250:
-#changing color value
-        B = 0
-#changing color value
+        B = startB
 wn = trtl.Screen()
 wn.mainloop()
