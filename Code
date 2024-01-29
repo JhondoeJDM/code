@@ -1,3 +1,4 @@
+from email import header
 import turtle as trtl
 import colorsys
 trtl.speed(0)
@@ -12,7 +13,8 @@ B=startB
 trtl.color(R, G, B)
 
 for i in range(250):
-    
+    header = 0
+    trtl.setheading(header)
     trtl.color(R, G, B)
     trtl.pencolor()
     trtl.circle(5-i, 100)
