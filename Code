@@ -2,15 +2,16 @@ import turtle as trtl
 import colorsys
 trtl.speed(0)
 trtl.bgcolor("black")
+trtl.colormode(255)
 
+trtl.color(130, 50, 50)
 
 for i in range(250):
     
     colorR = 1
     colorG = 1
     colorB = 1
-    trtl.colormode(255)
-    trtl.pencolor(255, 255, 255)
+    trtl.pencolor()
     trtl.circle(5-i, 100)
     trtl.lt(80)
     trtl.circle(5-i, 100)
