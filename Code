@@ -3,12 +3,14 @@ import colorsys
 trtl.speed(0)
 trtl.bgcolor("black")
 trtl.colormode(255)
-R=20
-G=20
-B=20
+startR = input("Starting value R")
+startG = input("Starting value G")
+startB = input("Starting value B")
+R=startR
+G=startG
+B=startB
 trtl.color(R, G, B)
 
-input("Starting value")
 for i in range(250):
     
     trtl.color(R, G, B)
@@ -22,10 +24,10 @@ for i in range(250):
     G = G + 5
     B = B + 5
     if R >= 250:
-        R = 0
+        R = startR
     if G >= 250:
-        G = 0
+        G = startG
     if B >= 250:
-        B = 0
+        B = startB
 wn = trtl.Screen()
 wn.mainloop()
