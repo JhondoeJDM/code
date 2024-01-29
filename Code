@@ -3,20 +3,29 @@ import colorsys
 trtl.speed(0)
 trtl.bgcolor("black")
 trtl.colormode(255)
+R=20
+G=20
+B=20
+trtl.color(R, G, B)
 
-trtl.color(130, 50, 50)
 
 for i in range(250):
     
-    colorR = 1
-    colorG = 1
-    colorB = 1
+    trtl.color(R, G, B)
     trtl.pencolor()
     trtl.circle(5-i, 100)
     trtl.lt(80)
     trtl.circle(5-i, 100)
     trtl.rt(80)
     trtl.circle(5-i, 100)
-    
+    R = R + 5
+    G = G + 5
+    B = B + 5
+    if R >= 250:
+        R = 0
+    if G >= 250:
+        G = 0
+    if B >= 250:
+        B = 0
 wn = trtl.Screen()
 wn.mainloop()
