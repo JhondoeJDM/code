@@ -8,7 +8,7 @@ G=20
 B=20
 trtl.color(R, G, B)
 
-
+input("Starting value")
 for i in range(250):
     
     trtl.color(R, G, B)
