@@ -3,15 +3,19 @@ import colorsys
 trtl.speed(0)
 trtl.bgcolor("black")
 trtl.colormode(255)
+# Good Color Combinations can be customly selected
+#Color Combinations_ (230, 140, 20) (201, 130, 151)
 startR = int(input("Starting value R"))
 startG = int(input("Starting value G"))
 startB = int(input("Starting value B"))
+#Starting to add color variables
 R=startR
 G=startG
 B=startB
 trtl.color(R, G, B)
 header = 1
-headerchange = int(input("How much should it rotate by"))
+#User input will change the entire shape( recomended 190, 160)
+headerchange = int(input("How much should it rotate by?"))
 for i in range(250):
     header = header + headerchange
     trtl.color(R, G, B)
