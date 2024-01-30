@@ -9,6 +9,7 @@ startR = int(input("Starting value R"))
 startG = int(input("Starting value G"))
 startB = int(input("Starting value B"))
 #Starting to add color variables
+#RGB based user input colors
 R=startR
 G=startG
 B=startB
@@ -18,17 +19,22 @@ header = 1
 headerchange = int(input("How much should it rotate by?"))
 for i in range(250):
     header = header + headerchange
+    # Our shape begins to take a shape with its input variables 
     trtl.color(R, G, B)
     trtl.pencolor()
+    #Shape of "Pedals" begins to form and loop
     trtl.circle(5-i, 100)
     trtl.lt(80)
     trtl.circle(5-i, 100)
     trtl.rt(80)
     trtl.circle(5-i, 100)
+    #Heading begins to change due to user input
     trtl.setheading(header)
+    #colors are varried although updated and changed through each loop
     R = R + 5
     G = G + 5
     B = B + 5
+    #If statements refresh and restart our colors to their previous base variable color
     if R >= 250:
         R = startR
     if G >= 250:
