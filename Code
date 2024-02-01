@@ -1,4 +1,3 @@
-from random import random
 import turtle as trtl
 import random
 trtl.speed(0)
@@ -26,55 +25,6 @@ B=startB
 trtl.color(R, G, B)
 header = 1
 headerchange = int(input("How much should it rotate by"))
-for i in range(250):
-    header = header + headerchange
-    # Our shape begins to take a shape with its input variables 
-    trtl.color(R, G, B)
-    trtl.pencolor()
-    #Shape of "Pedals" begins to form and loop
-    trtl.circle(5-i, 100)
-    trtl.lt(80)
-    trtl.circle(5-i, 100)
-    trtl.rt(80)
-    trtl.circle(5-i, 100)
-    #Heading begins to change due to user input
-    trtl.setheading(header)
-    #colors are varried although updated and changed through each loop
-    R = R + 5
-    G = G + 5
-    B = B + 5
-    #If statements refresh and restart our colors to their previous base variable color
-    if R >= 250:
-        R = startR
-    if G >= 250:
-        G = startG
-    if B >= 250:
-        B = startB
-    
-wn = trtl.Screen()
-wn.mainloop()
-
-
-
-import turtle as trtl
-import colorsys
-trtl.speed(0)
-trtl.bgcolor("black")
-trtl.colormode(255)
-# Good Color Combinations can be customly selected
-#Color Combinations_ (230, 140, 20) (201, 130, 151)
-startR = int(input("Starting value R"))
-startG = int(input("Starting value G"))
-startB = int(input("Starting value B"))
-#Starting to add color variables
-#RGB based user input colors
-R=startR
-G=startG
-B=startB
-trtl.color(R, G, B)
-header = 1
-#User input will change the entire shape( recomended 190, 160)
-headerchange = int(input("How much should it rotate by?"))
 for i in range(250):
     header = header + headerchange
     # Our shape begins to take a shape with its input variables 
